@@ -1,0 +1,14 @@
+<main class="puce-page">
+
+	<div _ngcontent-c21="" class="grid-viewer-wrapper">
+		<div _ngcontent-c21="" class="grid-viewer-title">
+			<div _ngcontent-c21="" class="grid-viewer-title-spacer">Puce Game</div>
+			<button *ngIf="!pret" mat-raised-button color="primary" type="button" (click)="genererTableau(currentLevel)">Générer niveau</button>
+		</div>
+		<!---->
+		<div _ngcontent-c21="" class="grid-viewer-body">
+			<!---->
+			<app-niveau [niveau]="niveau | async"></app-niveau>
+		</div>
+	</div>
+</main>

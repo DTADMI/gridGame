@@ -1,0 +1,16 @@
+<div class="table-puce-viewer"_ngcontent-c23="" tableau="niveau.tableau" *ngIf="niveau.tableau.length > 0">
+	<table _ngcontent-c23="" class="mat-elevation-z8 mat-table" mat-table="" role="grid">
+		<tbody>
+			<!---->
+			<tr _ngcontent-c23="" class="mat-row" mat-row="" role="row" *ngFor="let row of niveau.tableau;let i = index">
+				<!---->
+				<td _ngcontent-c23="" class="mat-cell cdk-column-position mat-column-position" mat-cell="" role="gridcell" *ngFor="let puce of row;let j = index">
+            		<app-puce [puce]="puce" (select)=select($event)></app-puce>
+            	</td>							
+			</tr>
+		</tbody>
+		<tfoot class="mat-table-sticky" style="bottom: 0px; position: sticky; z-index: 10;">
+			<!---->
+		</tfoot>
+	</table>
+</div>
